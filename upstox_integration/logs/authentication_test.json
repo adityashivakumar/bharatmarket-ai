@@ -1,0 +1,8 @@
+{
+    "service": "Upstox",
+    "test": "Get Profile API",
+    "result": "SUCCESS",
+    "http_status": 200,
+    "tested_at_utc": "2026-11-25T12:32:43.438072+00:00",
+    "token_value_saved": false
+}

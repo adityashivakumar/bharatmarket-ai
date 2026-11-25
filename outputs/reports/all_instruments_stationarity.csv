@@ -1,0 +1,21 @@
+Symbol,Series Type,ADF Statistic,p-value,Stationarity at 5%
+NIFTY50,Price,-1.0414268212542073,0.7378566738192743,Non-stationary / inconclusive
+NIFTY50,Daily Returns,-35.736176647761894,0.0,Stationary
+BANKNIFTY,Price,-1.0650129728681668,0.7288208240417824,Non-stationary / inconclusive
+BANKNIFTY,Daily Returns,-15.888374516301585,8.597348380798045e-29,Stationary
+RELIANCE,Price,-2.427832100914356,0.1340345790935289,Non-stationary / inconclusive
+RELIANCE,Daily Returns,-34.9688314997288,0.0,Stationary
+TCS,Price,-1.3047839359762101,0.6269808249328197,Non-stationary / inconclusive
+TCS,Daily Returns,-35.092337405727285,0.0,Stationary
+HDFCBANK,Price,-2.115485463708964,0.23833358104354457,Non-stationary / inconclusive
+HDFCBANK,Daily Returns,-16.520087625751753,2.0680694368273767e-29,Stationary
+INFY,Price,-1.8051671684338517,0.37789937238512344,Non-stationary / inconclusive
+INFY,Daily Returns,-34.47717599974228,0.0,Stationary
+ICICIBANK,Price,-0.5162072104483294,0.8888147754096405,Non-stationary / inconclusive
+ICICIBANK,Daily Returns,-34.70213467604562,0.0,Stationary
+SBIN,Price,-0.4566830836723764,0.9001959390856338,Non-stationary / inconclusive
+SBIN,Daily Returns,-16.47778067367334,2.251904210680811e-29,Stationary
+ITC,Price,-2.020646690559695,0.27759425740277355,Non-stationary / inconclusive
+ITC,Daily Returns,-19.288959045050554,0.0,Stationary
+LT,Price,-0.9491706999212416,0.7713490670065976,Non-stationary / inconclusive
+LT,Daily Returns,-9.061785620382782,4.542462481131928e-15,Stationary

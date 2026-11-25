@@ -1,0 +1,13 @@
+Item,Value
+Project,BharatMarket AI
+Notebook,06 - Forecast Evaluation and Walk-Forward Validation
+Instruments Loaded,10
+Instruments Evaluated,10
+Models Tested,2
+Forecast Horizon,20
+Walk-Forward Folds,6
+Initial Training Ratio,0.8
+Evaluation Metrics,"MAE, RMSE, MAPE, Directional Accuracy"
+Validation Method,Expanding Training Window
+Residual Test,Ljung-Box
+Best Models File,best_walk_forward_models.csv

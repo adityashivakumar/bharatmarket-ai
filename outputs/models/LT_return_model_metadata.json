@@ -1,0 +1,10 @@
+{
+    "instrument": "LT",
+    "target": "target_next_return",
+    "target_unit": "percentage_points",
+    "prediction_type": "next_trading_day_return",
+    "selected_model": "Zero Return Baseline",
+    "selection_metric": "Mean_Price_RMSE",
+    "selected_model_price_rmse": 62.83985101170054,
+    "model_file": null
+}

@@ -1,0 +1,2 @@
+Initial_Capital,Final_Capital,Net_Profit,Total_Return_Pct,Total_Trades,Win_Rate_Pct,Annualized_Return_Pct,Annualized_Volatility_Pct,Sharpe_Ratio,Sortino_Ratio,Maximum_Drawdown_Pct,Maximum_Consecutive_Losses,Daily_Loss_Breaches,Risk_Budget_Exceeded_Trades,Historical_VaR_95_Pct,Historical_CVaR_95_Pct
+100000.0,103876.62366964258,3876.6236696425767,3.876623669642587,94,50.0,4.7157434720933145,4.1034956240505345,1.1434040405820642,1.962090536674366,-2.412465932738661,4,0,1,-0.29528924536543283,-0.5471298513682401

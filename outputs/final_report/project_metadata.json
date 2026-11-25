@@ -1,0 +1,14 @@
+{
+    "Project": "BharatMarket AI",
+    "Project_Type": "Indian Stock Market Forecasting and Analytics",
+    "Instruments": 10,
+    "Historical_Data_Source": "CSV",
+    "Forecasting_Frequency": "Daily",
+    "Statistical_Models": "Naive and Moving Average",
+    "Machine_Learning_Models": "Linear Regression, Decision Tree, Random Forest, Gradient Boosting, XGBoost",
+    "Validation_Method": "Chronological Walk-Forward Validation",
+    "Forecasting_Target": "Next-Day Return for ML; Price-Level Forecast for Statistical Models",
+    "Backtesting": "Historical Paper-Trading Simulation",
+    "Dashboard_Planned": "Streamlit",
+    "Live_Data_Integration_Planned": "Upstox API"
+}

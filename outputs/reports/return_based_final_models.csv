@@ -1,0 +1,11 @@
+instrument,target,target_unit,prediction_type,selected_model,selection_metric,selected_model_price_rmse,model_file,feature_file
+NIFTY50,target_next_return,percentage_points,next_trading_day_return,Zero Return Baseline,Mean_Price_RMSE,222.34095558842566,,
+BANKNIFTY,target_next_return,percentage_points,next_trading_day_return,Zero Return Baseline,Mean_Price_RMSE,664.6888135462989,,
+RELIANCE,target_next_return,percentage_points,next_trading_day_return,Gradient Boosting,Mean_Price_RMSE,20.104428267824062,C:\Users\adity\Downloads\Historical data\BharatMarket_AI\outputs\models\RELIANCE_Gradient_Boosting_return.joblib,C:\Users\adity\Downloads\Historical data\BharatMarket_AI\outputs\models\RELIANCE_return_model_features.json
+TCS,target_next_return,percentage_points,next_trading_day_return,Zero Return Baseline,Mean_Price_RMSE,48.63851013636188,,
+HDFCBANK,target_next_return,percentage_points,next_trading_day_return,Gradient Boosting,Mean_Price_RMSE,12.156735851742097,C:\Users\adity\Downloads\Historical data\BharatMarket_AI\outputs\models\HDFCBANK_Gradient_Boosting_return.joblib,C:\Users\adity\Downloads\Historical data\BharatMarket_AI\outputs\models\HDFCBANK_return_model_features.json
+INFY,target_next_return,percentage_points,next_trading_day_return,Zero Return Baseline,Mean_Price_RMSE,24.95961332480846,,
+ICICIBANK,target_next_return,percentage_points,next_trading_day_return,Zero Return Baseline,Mean_Price_RMSE,18.62105988775795,,
+SBIN,target_next_return,percentage_points,next_trading_day_return,Zero Return Baseline,Mean_Price_RMSE,16.918146276217225,,
+ITC,target_next_return,percentage_points,next_trading_day_return,Linear Regression,Mean_Price_RMSE,3.9176804374646417,C:\Users\adity\Downloads\Historical data\BharatMarket_AI\outputs\models\ITC_Linear_Regression_return.joblib,C:\Users\adity\Downloads\Historical data\BharatMarket_AI\outputs\models\ITC_return_model_features.json
+LT,target_next_return,percentage_points,next_trading_day_return,Zero Return Baseline,Mean_Price_RMSE,62.83985101170054,,

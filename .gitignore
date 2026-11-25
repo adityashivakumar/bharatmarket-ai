@@ -1,0 +1,17 @@
+﻿.env
+.env.*
+!.env.example
+
+.venv/
+.venv-live/
+venv/
+__pycache__/
+*.py[cod]
+.ipynb_checkpoints/
+
+.pytest_cache/
+.mypy_cache/
+.DS_Store
+Thumbs.db
+
+.streamlit/secrets.toml

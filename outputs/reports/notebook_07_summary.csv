@@ -1,0 +1,16 @@
+Item,Value
+Project,BharatMarket AI
+Notebook,07 - Machine Learning Forecasting
+Instruments Loaded,10
+Instruments Evaluated,10
+Machine Learning Models,5
+Target Column,target_next_close
+Prediction Target,Next Trading Session Closing Price
+Train Test Split,80% Training / 20% Testing
+Validation Type,Chronological Holdout
+Evaluation Metrics,"MAE, RMSE, MAPE, R2, Directional Accuracy"
+Baseline,Persistence Model
+Feature Importance,Tree-Based Feature Importance
+Model Format,Joblib
+Models Saved,50
+Forecast Output,machine_learning_predictions.csv

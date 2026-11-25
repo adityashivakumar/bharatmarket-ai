@@ -1,0 +1,11 @@
+Instrument,Signal,Expected_Change_Percent,RSI_14,MACD,MACD_Signal,Reason
+NIFTY50,HOLD,0.0,66.98605904132967,649.3037661912203,565.9256594073704,Forecast movement does not meet the signal rules or the indicator condition is not satisfied.
+BANKNIFTY,HOLD,0.0,67.70839628689713,2063.962791812395,1561.5375676990002,Forecast movement does not meet the signal rules or the indicator condition is not satisfied.
+RELIANCE,HOLD,0.0,64.88882913743433,39.36580410163174,34.04512578624398,Forecast movement does not meet the signal rules or the indicator condition is not satisfied.
+TCS,HOLD,0.0,57.15014244842279,15.539041031541274,32.225376971302744,Forecast movement does not meet the signal rules or the indicator condition is not satisfied.
+HDFCBANK,HOLD,0.0,65.1909520090116,30.638457010843695,24.81153054203184,Forecast movement does not meet the signal rules or the indicator condition is not satisfied.
+INFY,HOLD,0.0,45.38617627936824,0.6682824789245387,10.773014087072028,Forecast movement does not meet the signal rules or the indicator condition is not satisfied.
+ICICIBANK,HOLD,0.0,65.34278305831553,60.90288348136346,54.62616693805898,Forecast movement does not meet the signal rules or the indicator condition is not satisfied.
+SBIN,HOLD,0.0,70.27952884542266,45.29240994454062,31.980583220051045,Forecast movement does not meet the signal rules or the indicator condition is not satisfied.
+ITC,HOLD,0.0,73.01519087375905,9.189863644990226,7.005816439636023,Forecast movement does not meet the signal rules or the indicator condition is not satisfied.
+LT,HOLD,0.0,59.08111400520008,102.22478750896289,96.34029893158592,Forecast movement does not meet the signal rules or the indicator condition is not satisfied.

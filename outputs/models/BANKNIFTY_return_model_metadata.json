@@ -1,0 +1,10 @@
+{
+    "instrument": "BANKNIFTY",
+    "target": "target_next_return",
+    "target_unit": "percentage_points",
+    "prediction_type": "next_trading_day_return",
+    "selected_model": "Zero Return Baseline",
+    "selection_metric": "Mean_Price_RMSE",
+    "selected_model_price_rmse": 664.6888135462989,
+    "model_file": null
+}

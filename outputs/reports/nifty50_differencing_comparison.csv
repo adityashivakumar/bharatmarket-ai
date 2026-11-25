@@ -1,0 +1,5 @@
+Series,ADF Statistic,p-value,Stationarity at 5%
+Original Price,-1.0414268212542073,0.7378566738192743,No
+First Difference,-24.2140056757958,0.0,Yes
+Second Difference,-13.660131091116055,1.5270057183144255e-25,Yes
+Daily Returns,-35.736176647761894,0.0,Yes

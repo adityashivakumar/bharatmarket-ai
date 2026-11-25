@@ -1,0 +1,11 @@
+{
+    "instrument": "RELIANCE",
+    "target": "target_next_return",
+    "target_unit": "percentage_points",
+    "prediction_type": "next_trading_day_return",
+    "selected_model": "Gradient Boosting",
+    "selection_metric": "Mean_Price_RMSE",
+    "selected_model_price_rmse": 20.104428267824062,
+    "model_file": "C:\\Users\\adity\\Downloads\\Historical data\\BharatMarket_AI\\outputs\\models\\RELIANCE_Gradient_Boosting_return.joblib",
+    "feature_file": "C:\\Users\\adity\\Downloads\\Historical data\\BharatMarket_AI\\outputs\\models\\RELIANCE_return_model_features.json"
+}

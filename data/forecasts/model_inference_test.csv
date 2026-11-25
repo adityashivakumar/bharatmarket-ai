@@ -1,0 +1,11 @@
+Instrument,Date,Model,Last_Close,Predicted_Return_Percent,Predicted_Price,Prediction_Type,Target_Unit
+BANKNIFTY,2026-11-23,Zero Return Baseline,62585.3515625,0.0,62585.3515625,next_trading_day_return,percentage_points
+HDFCBANK,2026-11-23,Gradient_Boosting,817.7999877929688,-0.2910740148945702,815.4195845346925,next_trading_day_return,percentage_points
+ICICIBANK,2026-11-23,Zero Return Baseline,1585.5,0.0,1585.5,next_trading_day_return,percentage_points
+INFY,2026-11-23,Zero Return Baseline,1103.4000244140625,0.0,1103.4000244140625,next_trading_day_return,percentage_points
+ITC,2026-11-23,Linear_Regression,301.0,-0.23721206423305577,300.28599168665846,next_trading_day_return,percentage_points
+LT,2026-11-23,Zero Return Baseline,4099.89990234375,0.0,4099.89990234375,next_trading_day_return,percentage_points
+NIFTY50,2026-11-23,Zero Return Baseline,25349.650390625,0.0,25349.650390625,next_trading_day_return,percentage_points
+RELIANCE,2026-11-23,Gradient_Boosting,1351.0,0.18737495483733466,1353.5314356398524,next_trading_day_return,percentage_points
+SBIN,2026-11-23,Zero Return Baseline,1132.6500244140625,0.0,1132.6500244140625,next_trading_day_return,percentage_points
+TCS,2026-11-23,Zero Return Baseline,2460.0,0.0,2460.0,next_trading_day_return,percentage_points

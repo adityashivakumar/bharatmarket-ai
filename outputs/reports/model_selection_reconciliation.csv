@@ -1,0 +1,11 @@
+Instrument,Final_Report_Model,Metadata_Model,Latest_Best_Report_Model,Metadata_Matches_Report,Artifact_Exists,Metadata_File_Exists
+NIFTY50,Zero Return Baseline,Zero Return Baseline,Zero Return Baseline,True,True,True
+BANKNIFTY,Zero Return Baseline,Zero Return Baseline,Zero Return Baseline,True,True,True
+RELIANCE,Gradient Boosting,Gradient Boosting,Gradient Boosting,True,True,True
+TCS,Zero Return Baseline,Zero Return Baseline,Zero Return Baseline,True,True,True
+HDFCBANK,Gradient Boosting,Gradient Boosting,Gradient Boosting,True,True,True
+INFY,Zero Return Baseline,Zero Return Baseline,Zero Return Baseline,True,True,True
+ICICIBANK,Zero Return Baseline,Zero Return Baseline,Zero Return Baseline,True,True,True
+SBIN,Zero Return Baseline,Zero Return Baseline,Gradient Boosting,True,True,True
+ITC,Linear Regression,Linear Regression,Linear Regression,True,True,True
+LT,Zero Return Baseline,Zero Return Baseline,Zero Return Baseline,True,True,True

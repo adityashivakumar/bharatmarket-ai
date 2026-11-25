@@ -1,0 +1,7 @@
+File,Rows,Columns,Column_Names
+statistical_forecasting_metrics.csv,20,6,"Instrument, Model, MAE, RMSE, MAPE, Directional_Accuracy"
+best_statistical_models.csv,10,6,"Instrument, Model, MAE, RMSE, MAPE, Directional_Accuracy"
+walk_forward_fold_results.csv,360,10,"Instrument, Fold, Model, Train_Size, Validation_Size, MAE, RMSE, MAPE, R2, Directional_Accuracy"
+one_shot_vs_walk_forward_comparison.csv,20,14,"Instrument, Model, Mean_MAE, Std_MAE, Mean_RMSE, Std_RMSE, Mean_MAPE, Std_MAPE, Mean_Directional_Accuracy, Std_Directional_Accuracy, Successful_Folds, One_Shot_RMSE, One_Shot_MAE, One_Shot_MAPE"
+notebook_05_summary.csv,10,2,"Item, Value"
+notebook_06_summary.csv,12,2,"Item, Value"

@@ -1,0 +1,11 @@
+Instrument,Status,Candles,From_Date,To_Date,Staging_File
+NIFTY50,PASSED,6,2026-11-16,2026-11-23,C:\Users\adity\Downloads\Historical data\BharatMarket_AI\upstox_integration\data\historical_staging\NIFTY50_upstox_staging.csv
+BANKNIFTY,PASSED,6,2026-11-16,2026-11-23,C:\Users\adity\Downloads\Historical data\BharatMarket_AI\upstox_integration\data\historical_staging\BANKNIFTY_upstox_staging.csv
+RELIANCE,PASSED,6,2026-11-16,2026-11-23,C:\Users\adity\Downloads\Historical data\BharatMarket_AI\upstox_integration\data\historical_staging\RELIANCE_upstox_staging.csv
+TCS,PASSED,6,2026-11-16,2026-11-23,C:\Users\adity\Downloads\Historical data\BharatMarket_AI\upstox_integration\data\historical_staging\TCS_upstox_staging.csv
+HDFCBANK,PASSED,6,2026-11-16,2026-11-23,C:\Users\adity\Downloads\Historical data\BharatMarket_AI\upstox_integration\data\historical_staging\HDFCBANK_upstox_staging.csv
+INFY,PASSED,6,2026-11-16,2026-11-23,C:\Users\adity\Downloads\Historical data\BharatMarket_AI\upstox_integration\data\historical_staging\INFY_upstox_staging.csv
+ICICIBANK,PASSED,6,2026-11-16,2026-11-23,C:\Users\adity\Downloads\Historical data\BharatMarket_AI\upstox_integration\data\historical_staging\ICICIBANK_upstox_staging.csv
+SBIN,PASSED,6,2026-11-16,2026-11-23,C:\Users\adity\Downloads\Historical data\BharatMarket_AI\upstox_integration\data\historical_staging\SBIN_upstox_staging.csv
+ITC,PASSED,6,2026-11-16,2026-11-23,C:\Users\adity\Downloads\Historical data\BharatMarket_AI\upstox_integration\data\historical_staging\ITC_upstox_staging.csv
+LT,PASSED,6,2026-11-16,2026-11-23,C:\Users\adity\Downloads\Historical data\BharatMarket_AI\upstox_integration\data\historical_staging\LT_upstox_staging.csv

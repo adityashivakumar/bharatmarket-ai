@@ -1,0 +1,11 @@
+Instrument,Best_Model,Mean_RMSE
+BANKNIFTY,Persistence Baseline,664.6888135462989
+HDFCBANK,Persistence Baseline,12.178994197347263
+ICICIBANK,Persistence Baseline,18.62105988775795
+INFY,Persistence Baseline,24.95961332480846
+ITC,Persistence Baseline,3.966633164778525
+LT,Persistence Baseline,62.83985101170054
+NIFTY50,Persistence Baseline,222.34095558842566
+RELIANCE,Persistence Baseline,20.105335710672097
+SBIN,Persistence Baseline,16.918146276217225
+TCS,Persistence Baseline,48.63851013636188

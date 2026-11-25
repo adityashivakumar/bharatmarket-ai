@@ -1,0 +1,811 @@
+{
+  "status": "success",
+  "data": {
+    "NSE_EQ:LT": {
+      "ohlc": {
+        "open": 4169.8,
+        "high": 4189.0,
+        "low": 4127.3,
+        "close": 4156.0,
+        "volume": 1313101,
+        "ts": 1795545000000
+      },
+      "depth": {
+        "buy": [
+          {
+            "quantity": 0,
+            "price": 0.0,
+            "orders": 0
+          },
+          {
+            "quantity": 0,
+            "price": 0.0,
+            "orders": 0
+          },
+          {
+            "quantity": 0,
+            "price": 0.0,
+            "orders": 0
+          },
+          {
+            "quantity": 0,
+            "price": 0.0,
+            "orders": 0
+          },
+          {
+            "quantity": 0,
+            "price": 0.0,
+            "orders": 0
+          }
+        ],
+        "sell": [
+          {
+            "quantity": 2190,
+            "price": 4156.0,
+            "orders": 18
+          },
+          {
+            "quantity": 0,
+            "price": 0.0,
+            "orders": 0
+          },
+          {
+            "quantity": 0,
+            "price": 0.0,
+            "orders": 0
+          },
+          {
+            "quantity": 0,
+            "price": 0.0,
+            "orders": 0
+          },
+          {
+            "quantity": 0,
+            "price": 0.0,
+            "orders": 0
+          }
+        ]
+      },
+      "timestamp": "2026-11-25T18:03:23.891+05:30",
+      "instrument_token": "NSE_EQ|INE018A01030",
+      "symbol": "LT",
+      "last_price": 4156.0,
+      "volume": 1313101,
+      "average_price": 4151.62,
+      "oi": 0.0,
+      "net_change": 56.1,
+      "total_buy_quantity": 0.0,
+      "total_sell_quantity": 2190.0,
+      "lower_circuit_limit": 4024.800048828125,
+      "upper_circuit_limit": 4273.60009765625,
+      "last_trade_time": "1795602509247",
+      "oi_day_high": 0.0,
+      "oi_day_low": 0.0,
+      "prev_close_price": 4099.9,
+      "year_high": 4440.0,
+      "year_low": 3288.1,
+      "previous_oi": 0.0,
+      "indicative_equilibrium_price": 0.0,
+      "reference_price": 4149.2,
+      "indicative_equilibrium_quantity": 0,
+      "indicative_imbalance_quantity_total": 0,
+      "indicative_imbalance_quantity_market": 0,
+      "cas_eligible": true
+    },
+    "NSE_INDEX:Nifty Bank": {
+      "ohlc": {
+        "open": 63408.6,
+        "high": 64133.8,
+        "low": 63247.9,
+        "close": 63703.25,
+        "volume": 0,
+        "ts": 1795545000000
+      },
+      "depth": {
+        "buy": [],
+        "sell": []
+      },
+      "timestamp": "2026-11-25T18:03:23.891+05:30",
+      "instrument_token": "NSE_INDEX|Nifty Bank",
+      "symbol": "NA",
+      "last_price": 63703.25,
+      "volume": null,
+      "average_price": null,
+      "oi": null,
+      "net_change": 1117.9,
+      "total_buy_quantity": null,
+      "total_sell_quantity": null,
+      "lower_circuit_limit": null,
+      "upper_circuit_limit": null,
+      "last_trade_time": "1795602600000",
+      "oi_day_high": null,
+      "oi_day_low": null,
+      "prev_close_price": null,
+      "year_high": null,
+      "year_low": null,
+      "previous_oi": null,
+      "indicative_equilibrium_price": null,
+      "reference_price": null,
+      "indicative_equilibrium_quantity": null,
+      "indicative_imbalance_quantity_total": null,
+      "indicative_imbalance_quantity_market": null,
+      "cas_eligible": null
+    },
+    "NSE_EQ:HDFCBANK": {
+      "ohlc": {
+        "open": 833.1,
+        "high": 850.5,
+        "low": 831.55,
+        "close": 846.2,
+        "volume": 48187313,
+        "ts": 1795545000000
+      },
+      "depth": {
+        "buy": [
+          {
+            "quantity": 0,
+            "price": 0.0,
+            "orders": 0
+          },
+          {
+            "quantity": 0,
+            "price": 0.0,
+            "orders": 0
+          },
+          {
+            "quantity": 0,
+            "price": 0.0,
+            "orders": 0
+          },
+          {
+            "quantity": 0,
+            "price": 0.0,
+            "orders": 0
+          },
+          {
+            "quantity": 0,
+            "price": 0.0,
+            "orders": 0
+          }
+        ],
+        "sell": [
+          {
+            "quantity": 13169,
+            "price": 846.2,
+            "orders": 78
+          },
+          {
+            "quantity": 0,
+            "price": 0.0,
+            "orders": 0
+          },
+          {
+            "quantity": 0,
+            "price": 0.0,
+            "orders": 0
+          },
+          {
+            "quantity": 0,
+            "price": 0.0,
+            "orders": 0
+          },
+          {
+            "quantity": 0,
+            "price": 0.0,
+            "orders": 0
+          }
+        ]
+      },
+      "timestamp": "2026-11-25T18:03:23.891+05:30",
+      "instrument_token": "NSE_EQ|INE040A01034",
+      "symbol": "HDFCBANK",
+      "last_price": 846.2,
+      "volume": 48187313,
+      "average_price": 844.29,
+      "oi": 0.0,
+      "net_change": 28.4,
+      "total_buy_quantity": 0.0,
+      "total_sell_quantity": 13169.0,
+      "lower_circuit_limit": 817.5999755859375,
+      "upper_circuit_limit": 868.0999755859375,
+      "last_trade_time": "1795602558752",
+      "oi_day_high": 0.0,
+      "oi_day_low": 0.0,
+      "prev_close_price": 817.8,
+      "year_high": 1017.5,
+      "year_low": 669.2,
+      "previous_oi": 0.0,
+      "indicative_equilibrium_price": 0.0,
+      "reference_price": 842.85,
+      "indicative_equilibrium_quantity": 0,
+      "indicative_imbalance_quantity_total": 0,
+      "indicative_imbalance_quantity_market": 0,
+      "cas_eligible": true
+    },
+    "NSE_EQ:TCS": {
+      "ohlc": {
+        "open": 2510.0,
+        "high": 2534.0,
+        "low": 2487.0,
+        "close": 2517.3,
+        "volume": 5001661,
+        "ts": 1795545000000
+      },
+      "depth": {
+        "buy": [
+          {
+            "quantity": 0,
+            "price": 0.0,
+            "orders": 0
+          },
+          {
+            "quantity": 0,
+            "price": 0.0,
+            "orders": 0
+          },
+          {
+            "quantity": 0,
+            "price": 0.0,
+            "orders": 0
+          },
+          {
+            "quantity": 0,
+            "price": 0.0,
+            "orders": 0
+          },
+          {
+            "quantity": 0,
+            "price": 0.0,
+            "orders": 0
+          }
+        ],
+        "sell": [
+          {
+            "quantity": 414,
+            "price": 2517.3,
+            "orders": 16
+          },
+          {
+            "quantity": 0,
+            "price": 0.0,
+            "orders": 0
+          },
+          {
+            "quantity": 0,
+            "price": 0.0,
+            "orders": 0
+          },
+          {
+            "quantity": 0,
+            "price": 0.0,
+            "orders": 0
+          },
+          {
+            "quantity": 0,
+            "price": 0.0,
+            "orders": 0
+          }
+        ]
+      },
+      "timestamp": "2026-11-25T18:03:23.891+05:30",
+      "instrument_token": "NSE_EQ|INE467B01029",
+      "symbol": "TCS",
+      "last_price": 2517.3,
+      "volume": 5001661,
+      "average_price": 2508.42,
+      "oi": 0.0,
+      "net_change": 57.3,
+      "total_buy_quantity": 0.0,
+      "total_sell_quantity": 414.0,
+      "lower_circuit_limit": 2429.800048828125,
+      "upper_circuit_limit": 2580.0,
+      "last_trade_time": "1795602553519",
+      "oi_day_high": 0.0,
+      "oi_day_low": 0.0,
+      "prev_close_price": 2460.0,
+      "year_high": 3350.0,
+      "year_low": 1976.8,
+      "previous_oi": 0.0,
+      "indicative_equilibrium_price": 0.0,
+      "reference_price": 2504.9,
+      "indicative_equilibrium_quantity": 0,
+      "indicative_imbalance_quantity_total": 0,
+      "indicative_imbalance_quantity_market": 0,
+      "cas_eligible": true
+    },
+    "NSE_INDEX:Nifty 50": {
+      "ohlc": {
+        "open": 25658.35,
+        "high": 25951.65,
+        "low": 25619.0,
+        "close": 25819.25,
+        "volume": 0,
+        "ts": 1795545000000
+      },
+      "depth": {
+        "buy": [],
+        "sell": []
+      },
+      "timestamp": "2026-11-25T18:03:23.891+05:30",
+      "instrument_token": "NSE_INDEX|Nifty 50",
+      "symbol": "NA",
+      "last_price": 25819.25,
+      "volume": null,
+      "average_price": null,
+      "oi": null,
+      "net_change": 469.6,
+      "total_buy_quantity": null,
+      "total_sell_quantity": null,
+      "lower_circuit_limit": null,
+      "upper_circuit_limit": null,
+      "last_trade_time": "1795602600000",
+      "oi_day_high": null,
+      "oi_day_low": null,
+      "prev_close_price": null,
+      "year_high": null,
+      "year_low": null,
+      "previous_oi": null,
+      "indicative_equilibrium_price": null,
+      "reference_price": null,
+      "indicative_equilibrium_quantity": null,
+      "indicative_imbalance_quantity_total": null,
+      "indicative_imbalance_quantity_market": null,
+      "cas_eligible": null
+    },
+    "NSE_EQ:ITC": {
+      "ohlc": {
+        "open": 301.1,
+        "high": 313.05,
+        "low": 300.5,
+        "close": 309.25,
+        "volume": 41071647,
+        "ts": 1795545000000
+      },
+      "depth": {
+        "buy": [
+          {
+            "quantity": 0,
+            "price": 0.0,
+            "orders": 0
+          },
+          {
+            "quantity": 0,
+            "price": 0.0,
+            "orders": 0
+          },
+          {
+            "quantity": 0,
+            "price": 0.0,
+            "orders": 0
+          },
+          {
+            "quantity": 0,
+            "price": 0.0,
+            "orders": 0
+          },
+          {
+            "quantity": 0,
+            "price": 0.0,
+            "orders": 0
+          }
+        ],
+        "sell": [
+          {
+            "quantity": 3819,
+            "price": 309.25,
+            "orders": 7
+          },
+          {
+            "quantity": 0,
+            "price": 0.0,
+            "orders": 0
+          },
+          {
+            "quantity": 0,
+            "price": 0.0,
+            "orders": 0
+          },
+          {
+            "quantity": 0,
+            "price": 0.0,
+            "orders": 0
+          },
+          {
+            "quantity": 0,
+            "price": 0.0,
+            "orders": 0
+          }
+        ]
+      },
+      "timestamp": "2026-11-25T18:03:23.891+05:30",
+      "instrument_token": "NSE_EQ|INE154A01025",
+      "symbol": "ITC",
+      "last_price": 309.25,
+      "volume": 41071647,
+      "average_price": 308.5,
+      "oi": 0.0,
+      "net_change": 8.25,
+      "total_buy_quantity": 0.0,
+      "total_sell_quantity": 3819.0,
+      "lower_circuit_limit": 300.0,
+      "upper_circuit_limit": 318.5,
+      "last_trade_time": "1795602573025",
+      "oi_day_high": 0.0,
+      "oi_day_low": 0.0,
+      "prev_close_price": 301.0,
+      "year_high": 409.5,
+      "year_low": 252.8,
+      "previous_oi": 0.0,
+      "indicative_equilibrium_price": 0.0,
+      "reference_price": 309.25,
+      "indicative_equilibrium_quantity": 0,
+      "indicative_imbalance_quantity_total": 0,
+      "indicative_imbalance_quantity_market": 0,
+      "cas_eligible": true
+    },
+    "NSE_EQ:RELIANCE": {
+      "ohlc": {
+        "open": 1359.8,
+        "high": 1394.2,
+        "low": 1357.0,
+        "close": 1373.9,
+        "volume": 18781717,
+        "ts": 1795545000000
+      },
+      "depth": {
+        "buy": [
+          {
+            "quantity": 501,
+            "price": 1373.9,
+            "orders": 5
+          },
+          {
+            "quantity": 0,
+            "price": 0.0,
+            "orders": 0
+          },
+          {
+            "quantity": 0,
+            "price": 0.0,
+            "orders": 0
+          },
+          {
+            "quantity": 0,
+            "price": 0.0,
+            "orders": 0
+          },
+          {
+            "quantity": 0,
+            "price": 0.0,
+            "orders": 0
+          }
+        ],
+        "sell": [
+          {
+            "quantity": 0,
+            "price": 0.0,
+            "orders": 0
+          },
+          {
+            "quantity": 0,
+            "price": 0.0,
+            "orders": 0
+          },
+          {
+            "quantity": 0,
+            "price": 0.0,
+            "orders": 0
+          },
+          {
+            "quantity": 0,
+            "price": 0.0,
+            "orders": 0
+          },
+          {
+            "quantity": 0,
+            "price": 0.0,
+            "orders": 0
+          }
+        ]
+      },
+      "timestamp": "2026-11-25T18:03:23.891+05:30",
+      "instrument_token": "NSE_EQ|INE002A01018",
+      "symbol": "RELIANCE",
+      "last_price": 1373.9,
+      "volume": 18781717,
+      "average_price": 1375.68,
+      "oi": 0.0,
+      "net_change": 22.9,
+      "total_buy_quantity": 501.0,
+      "total_sell_quantity": 0.0,
+      "lower_circuit_limit": 1332.4000244140625,
+      "upper_circuit_limit": 1414.800048828125,
+      "last_trade_time": "1795602589560",
+      "oi_day_high": 0.0,
+      "oi_day_low": 0.0,
+      "prev_close_price": 1351.0,
+      "year_high": 1611.8,
+      "year_low": 1152.2,
+      "previous_oi": 0.0,
+      "indicative_equilibrium_price": 0.0,
+      "reference_price": 1373.6,
+      "indicative_equilibrium_quantity": 0,
+      "indicative_imbalance_quantity_total": 0,
+      "indicative_imbalance_quantity_market": 0,
+      "cas_eligible": true
+    },
+    "NSE_EQ:SBIN": {
+      "ohlc": {
+        "open": 1142.0,
+        "high": 1153.8,
+        "low": 1132.0,
+        "close": 1138.15,
+        "volume": 11608572,
+        "ts": 1795545000000
+      },
+      "depth": {
+        "buy": [
+          {
+            "quantity": 0,
+            "price": 0.0,
+            "orders": 0
+          },
+          {
+            "quantity": 0,
+            "price": 0.0,
+            "orders": 0
+          },
+          {
+            "quantity": 0,
+            "price": 0.0,
+            "orders": 0
+          },
+          {
+            "quantity": 0,
+            "price": 0.0,
+            "orders": 0
+          },
+          {
+            "quantity": 0,
+            "price": 0.0,
+            "orders": 0
+          }
+        ],
+        "sell": [
+          {
+            "quantity": 978,
+            "price": 1138.15,
+            "orders": 15
+          },
+          {
+            "quantity": 0,
+            "price": 0.0,
+            "orders": 0
+          },
+          {
+            "quantity": 0,
+            "price": 0.0,
+            "orders": 0
+          },
+          {
+            "quantity": 0,
+            "price": 0.0,
+            "orders": 0
+          },
+          {
+            "quantity": 0,
+            "price": 0.0,
+            "orders": 0
+          }
+        ]
+      },
+      "timestamp": "2026-11-25T18:03:23.891+05:30",
+      "instrument_token": "NSE_EQ|INE062A01020",
+      "symbol": "SBIN",
+      "last_price": 1138.15,
+      "volume": 11608572,
+      "average_price": 1140.72,
+      "oi": 0.0,
+      "net_change": 5.5,
+      "total_buy_quantity": 0.0,
+      "total_sell_quantity": 978.0,
+      "lower_circuit_limit": 1105.0999755859375,
+      "upper_circuit_limit": 1173.4000244140625,
+      "last_trade_time": "1795602596981",
+      "oi_day_high": 0.0,
+      "oi_day_low": 0.0,
+      "prev_close_price": 1132.65,
+      "year_high": 1234.7,
+      "year_low": 933.9,
+      "previous_oi": 0.0,
+      "indicative_equilibrium_price": 0.0,
+      "reference_price": 1139.25,
+      "indicative_equilibrium_quantity": 0,
+      "indicative_imbalance_quantity_total": 0,
+      "indicative_imbalance_quantity_market": 0,
+      "cas_eligible": true
+    },
+    "NSE_EQ:ICICIBANK": {
+      "ohlc": {
+        "open": 1617.0,
+        "high": 1650.0,
+        "low": 1617.0,
+        "close": 1640.0,
+        "volume": 18982380,
+        "ts": 1795545000000
+      },
+      "depth": {
+        "buy": [
+          {
+            "quantity": 1398,
+            "price": 1640.0,
+            "orders": 7
+          },
+          {
+            "quantity": 0,
+            "price": 0.0,
+            "orders": 0
+          },
+          {
+            "quantity": 0,
+            "price": 0.0,
+            "orders": 0
+          },
+          {
+            "quantity": 0,
+            "price": 0.0,
+            "orders": 0
+          },
+          {
+            "quantity": 0,
+            "price": 0.0,
+            "orders": 0
+          }
+        ],
+        "sell": [
+          {
+            "quantity": 0,
+            "price": 0.0,
+            "orders": 0
+          },
+          {
+            "quantity": 0,
+            "price": 0.0,
+            "orders": 0
+          },
+          {
+            "quantity": 0,
+            "price": 0.0,
+            "orders": 0
+          },
+          {
+            "quantity": 0,
+            "price": 0.0,
+            "orders": 0
+          },
+          {
+            "quantity": 0,
+            "price": 0.0,
+            "orders": 0
+          }
+        ]
+      },
+      "timestamp": "2026-11-25T18:03:23.891+05:30",
+      "instrument_token": "NSE_EQ|INE090A01021",
+      "symbol": "ICICIBANK",
+      "last_price": 1640.0,
+      "volume": 18982380,
+      "average_price": 1636.9,
+      "oi": 0.0,
+      "net_change": 54.5,
+      "total_buy_quantity": 1398.0,
+      "total_sell_quantity": 0.0,
+      "lower_circuit_limit": 1589.5,
+      "upper_circuit_limit": 1687.699951171875,
+      "last_trade_time": "1795602555908",
+      "oi_day_high": 0.0,
+      "oi_day_low": 0.0,
+      "prev_close_price": 1585.5,
+      "year_high": 1650.0,
+      "year_low": 1187.6,
+      "previous_oi": 0.0,
+      "indicative_equilibrium_price": 0.0,
+      "reference_price": 1638.6,
+      "indicative_equilibrium_quantity": 0,
+      "indicative_imbalance_quantity_total": 0,
+      "indicative_imbalance_quantity_market": 0,
+      "cas_eligible": true
+    },
+    "NSE_EQ:INFY": {
+      "ohlc": {
+        "open": 1141.8,
+        "high": 1151.9,
+        "low": 1122.4,
+        "close": 1130.0,
+        "volume": 14498633,
+        "ts": 1795545000000
+      },
+      "depth": {
+        "buy": [
+          {
+            "quantity": 23189,
+            "price": 1130.0,
+            "orders": 35
+          },
+          {
+            "quantity": 0,
+            "price": 0.0,
+            "orders": 0
+          },
+          {
+            "quantity": 0,
+            "price": 0.0,
+            "orders": 0
+          },
+          {
+            "quantity": 0,
+            "price": 0.0,
+            "orders": 0
+          },
+          {
+            "quantity": 0,
+            "price": 0.0,
+            "orders": 0
+          }
+        ],
+        "sell": [
+          {
+            "quantity": 0,
+            "price": 0.0,
+            "orders": 0
+          },
+          {
+            "quantity": 0,
+            "price": 0.0,
+            "orders": 0
+          },
+          {
+            "quantity": 0,
+            "price": 0.0,
+            "orders": 0
+          },
+          {
+            "quantity": 0,
+            "price": 0.0,
+            "orders": 0
+          },
+          {
+            "quantity": 0,
+            "price": 0.0,
+            "orders": 0
+          }
+        ]
+      },
+      "timestamp": "2026-11-25T18:03:23.891+05:30",
+      "instrument_token": "NSE_EQ|INE009A01021",
+      "symbol": "INFY",
+      "last_price": 1130.0,
+      "volume": 14498633,
+      "average_price": 1135.68,
+      "oi": 0.0,
+      "net_change": 26.6,
+      "total_buy_quantity": 23189.0,
+      "total_sell_quantity": 0.0,
+      "lower_circuit_limit": 1094.199951171875,
+      "upper_circuit_limit": 1161.800048828125,
+      "last_trade_time": "1795602592059",
+      "oi_day_high": 0.0,
+      "oi_day_low": 0.0,
+      "prev_close_price": 1103.4,
+      "year_high": 1728.0,
+      "year_low": 980.4,
+      "previous_oi": 0.0,
+      "indicative_equilibrium_price": 0.0,
+      "reference_price": 1128.0,
+      "indicative_equilibrium_quantity": 0,
+      "indicative_imbalance_quantity_total": 0,
+      "indicative_imbalance_quantity_market": 0,
+      "cas_eligible": true
+    }
+  }
+}

@@ -1,0 +1,11 @@
+Instrument,Model,Return_RMSE,Saved_Best_Model,Model_Agreement
+BANKNIFTY,Zero Return Baseline,1.2442051927374391,Zero Return Baseline,True
+HDFCBANK,Gradient Boosting,1.5903229655530169,Gradient Boosting,True
+ICICIBANK,Zero Return Baseline,1.4032943015393615,Zero Return Baseline,True
+INFY,Zero Return Baseline,2.094844846391627,Zero Return Baseline,True
+ITC,Linear Regression,1.3810775755849403,Linear Regression,True
+LT,Zero Return Baseline,1.7289957980078332,Zero Return Baseline,True
+NIFTY50,Zero Return Baseline,0.9733916046541524,Zero Return Baseline,True
+RELIANCE,Gradient Boosting,1.586507721255968,Gradient Boosting,True
+SBIN,Gradient Boosting,1.6486082116954,Zero Return Baseline,False
+TCS,Zero Return Baseline,2.0249229037088905,Zero Return Baseline,True

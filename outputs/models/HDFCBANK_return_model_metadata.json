@@ -1,0 +1,11 @@
+{
+    "instrument": "HDFCBANK",
+    "target": "target_next_return",
+    "target_unit": "percentage_points",
+    "prediction_type": "next_trading_day_return",
+    "selected_model": "Gradient Boosting",
+    "selection_metric": "Mean_Price_RMSE",
+    "selected_model_price_rmse": 12.156735851742097,
+    "model_file": "C:\\Users\\adity\\Downloads\\Historical data\\BharatMarket_AI\\outputs\\models\\HDFCBANK_Gradient_Boosting_return.joblib",
+    "feature_file": "C:\\Users\\adity\\Downloads\\Historical data\\BharatMarket_AI\\outputs\\models\\HDFCBANK_return_model_features.json"
+}

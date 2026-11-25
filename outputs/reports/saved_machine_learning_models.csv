@@ -1,0 +1,51 @@
+Instrument,Model,Filename,Path
+NIFTY50,Linear Regression,NIFTY50_linear_regression.joblib,C:\Users\adity\Downloads\Historical data\BharatMarket_AI\outputs\models\NIFTY50_linear_regression.joblib
+NIFTY50,Decision Tree,NIFTY50_decision_tree.joblib,C:\Users\adity\Downloads\Historical data\BharatMarket_AI\outputs\models\NIFTY50_decision_tree.joblib
+NIFTY50,Random Forest,NIFTY50_random_forest.joblib,C:\Users\adity\Downloads\Historical data\BharatMarket_AI\outputs\models\NIFTY50_random_forest.joblib
+NIFTY50,Gradient Boosting,NIFTY50_gradient_boosting.joblib,C:\Users\adity\Downloads\Historical data\BharatMarket_AI\outputs\models\NIFTY50_gradient_boosting.joblib
+NIFTY50,XGBoost,NIFTY50_xgboost.joblib,C:\Users\adity\Downloads\Historical data\BharatMarket_AI\outputs\models\NIFTY50_xgboost.joblib
+BANKNIFTY,Linear Regression,BANKNIFTY_linear_regression.joblib,C:\Users\adity\Downloads\Historical data\BharatMarket_AI\outputs\models\BANKNIFTY_linear_regression.joblib
+BANKNIFTY,Decision Tree,BANKNIFTY_decision_tree.joblib,C:\Users\adity\Downloads\Historical data\BharatMarket_AI\outputs\models\BANKNIFTY_decision_tree.joblib
+BANKNIFTY,Random Forest,BANKNIFTY_random_forest.joblib,C:\Users\adity\Downloads\Historical data\BharatMarket_AI\outputs\models\BANKNIFTY_random_forest.joblib
+BANKNIFTY,Gradient Boosting,BANKNIFTY_gradient_boosting.joblib,C:\Users\adity\Downloads\Historical data\BharatMarket_AI\outputs\models\BANKNIFTY_gradient_boosting.joblib
+BANKNIFTY,XGBoost,BANKNIFTY_xgboost.joblib,C:\Users\adity\Downloads\Historical data\BharatMarket_AI\outputs\models\BANKNIFTY_xgboost.joblib
+RELIANCE,Linear Regression,RELIANCE_linear_regression.joblib,C:\Users\adity\Downloads\Historical data\BharatMarket_AI\outputs\models\RELIANCE_linear_regression.joblib
+RELIANCE,Decision Tree,RELIANCE_decision_tree.joblib,C:\Users\adity\Downloads\Historical data\BharatMarket_AI\outputs\models\RELIANCE_decision_tree.joblib
+RELIANCE,Random Forest,RELIANCE_random_forest.joblib,C:\Users\adity\Downloads\Historical data\BharatMarket_AI\outputs\models\RELIANCE_random_forest.joblib
+RELIANCE,Gradient Boosting,RELIANCE_gradient_boosting.joblib,C:\Users\adity\Downloads\Historical data\BharatMarket_AI\outputs\models\RELIANCE_gradient_boosting.joblib
+RELIANCE,XGBoost,RELIANCE_xgboost.joblib,C:\Users\adity\Downloads\Historical data\BharatMarket_AI\outputs\models\RELIANCE_xgboost.joblib
+TCS,Linear Regression,TCS_linear_regression.joblib,C:\Users\adity\Downloads\Historical data\BharatMarket_AI\outputs\models\TCS_linear_regression.joblib
+TCS,Decision Tree,TCS_decision_tree.joblib,C:\Users\adity\Downloads\Historical data\BharatMarket_AI\outputs\models\TCS_decision_tree.joblib
+TCS,Random Forest,TCS_random_forest.joblib,C:\Users\adity\Downloads\Historical data\BharatMarket_AI\outputs\models\TCS_random_forest.joblib
+TCS,Gradient Boosting,TCS_gradient_boosting.joblib,C:\Users\adity\Downloads\Historical data\BharatMarket_AI\outputs\models\TCS_gradient_boosting.joblib
+TCS,XGBoost,TCS_xgboost.joblib,C:\Users\adity\Downloads\Historical data\BharatMarket_AI\outputs\models\TCS_xgboost.joblib
+HDFCBANK,Linear Regression,HDFCBANK_linear_regression.joblib,C:\Users\adity\Downloads\Historical data\BharatMarket_AI\outputs\models\HDFCBANK_linear_regression.joblib
+HDFCBANK,Decision Tree,HDFCBANK_decision_tree.joblib,C:\Users\adity\Downloads\Historical data\BharatMarket_AI\outputs\models\HDFCBANK_decision_tree.joblib
+HDFCBANK,Random Forest,HDFCBANK_random_forest.joblib,C:\Users\adity\Downloads\Historical data\BharatMarket_AI\outputs\models\HDFCBANK_random_forest.joblib
+HDFCBANK,Gradient Boosting,HDFCBANK_gradient_boosting.joblib,C:\Users\adity\Downloads\Historical data\BharatMarket_AI\outputs\models\HDFCBANK_gradient_boosting.joblib
+HDFCBANK,XGBoost,HDFCBANK_xgboost.joblib,C:\Users\adity\Downloads\Historical data\BharatMarket_AI\outputs\models\HDFCBANK_xgboost.joblib
+INFY,Linear Regression,INFY_linear_regression.joblib,C:\Users\adity\Downloads\Historical data\BharatMarket_AI\outputs\models\INFY_linear_regression.joblib
+INFY,Decision Tree,INFY_decision_tree.joblib,C:\Users\adity\Downloads\Historical data\BharatMarket_AI\outputs\models\INFY_decision_tree.joblib
+INFY,Random Forest,INFY_random_forest.joblib,C:\Users\adity\Downloads\Historical data\BharatMarket_AI\outputs\models\INFY_random_forest.joblib
+INFY,Gradient Boosting,INFY_gradient_boosting.joblib,C:\Users\adity\Downloads\Historical data\BharatMarket_AI\outputs\models\INFY_gradient_boosting.joblib
+INFY,XGBoost,INFY_xgboost.joblib,C:\Users\adity\Downloads\Historical data\BharatMarket_AI\outputs\models\INFY_xgboost.joblib
+ICICIBANK,Linear Regression,ICICIBANK_linear_regression.joblib,C:\Users\adity\Downloads\Historical data\BharatMarket_AI\outputs\models\ICICIBANK_linear_regression.joblib
+ICICIBANK,Decision Tree,ICICIBANK_decision_tree.joblib,C:\Users\adity\Downloads\Historical data\BharatMarket_AI\outputs\models\ICICIBANK_decision_tree.joblib
+ICICIBANK,Random Forest,ICICIBANK_random_forest.joblib,C:\Users\adity\Downloads\Historical data\BharatMarket_AI\outputs\models\ICICIBANK_random_forest.joblib
+ICICIBANK,Gradient Boosting,ICICIBANK_gradient_boosting.joblib,C:\Users\adity\Downloads\Historical data\BharatMarket_AI\outputs\models\ICICIBANK_gradient_boosting.joblib
+ICICIBANK,XGBoost,ICICIBANK_xgboost.joblib,C:\Users\adity\Downloads\Historical data\BharatMarket_AI\outputs\models\ICICIBANK_xgboost.joblib
+SBIN,Linear Regression,SBIN_linear_regression.joblib,C:\Users\adity\Downloads\Historical data\BharatMarket_AI\outputs\models\SBIN_linear_regression.joblib
+SBIN,Decision Tree,SBIN_decision_tree.joblib,C:\Users\adity\Downloads\Historical data\BharatMarket_AI\outputs\models\SBIN_decision_tree.joblib
+SBIN,Random Forest,SBIN_random_forest.joblib,C:\Users\adity\Downloads\Historical data\BharatMarket_AI\outputs\models\SBIN_random_forest.joblib
+SBIN,Gradient Boosting,SBIN_gradient_boosting.joblib,C:\Users\adity\Downloads\Historical data\BharatMarket_AI\outputs\models\SBIN_gradient_boosting.joblib
+SBIN,XGBoost,SBIN_xgboost.joblib,C:\Users\adity\Downloads\Historical data\BharatMarket_AI\outputs\models\SBIN_xgboost.joblib
+ITC,Linear Regression,ITC_linear_regression.joblib,C:\Users\adity\Downloads\Historical data\BharatMarket_AI\outputs\models\ITC_linear_regression.joblib
+ITC,Decision Tree,ITC_decision_tree.joblib,C:\Users\adity\Downloads\Historical data\BharatMarket_AI\outputs\models\ITC_decision_tree.joblib
+ITC,Random Forest,ITC_random_forest.joblib,C:\Users\adity\Downloads\Historical data\BharatMarket_AI\outputs\models\ITC_random_forest.joblib
+ITC,Gradient Boosting,ITC_gradient_boosting.joblib,C:\Users\adity\Downloads\Historical data\BharatMarket_AI\outputs\models\ITC_gradient_boosting.joblib
+ITC,XGBoost,ITC_xgboost.joblib,C:\Users\adity\Downloads\Historical data\BharatMarket_AI\outputs\models\ITC_xgboost.joblib
+LT,Linear Regression,LT_linear_regression.joblib,C:\Users\adity\Downloads\Historical data\BharatMarket_AI\outputs\models\LT_linear_regression.joblib
+LT,Decision Tree,LT_decision_tree.joblib,C:\Users\adity\Downloads\Historical data\BharatMarket_AI\outputs\models\LT_decision_tree.joblib
+LT,Random Forest,LT_random_forest.joblib,C:\Users\adity\Downloads\Historical data\BharatMarket_AI\outputs\models\LT_random_forest.joblib
+LT,Gradient Boosting,LT_gradient_boosting.joblib,C:\Users\adity\Downloads\Historical data\BharatMarket_AI\outputs\models\LT_gradient_boosting.joblib
+LT,XGBoost,LT_xgboost.joblib,C:\Users\adity\Downloads\Historical data\BharatMarket_AI\outputs\models\LT_xgboost.joblib

@@ -1,0 +1,11 @@
+Item,Value
+Project,BharatMarket AI
+Notebook,05 - Statistical Forecasting
+Instruments Loaded,10
+Instruments Evaluated,10
+Models Evaluated,2
+Train Test Split,80% / 20%
+Forecasting Target,"Adjusted Close where available, otherwise Close"
+Primary Evaluation Metrics,"MAE, RMSE, MAPE, Directional Accuracy"
+Forecast File,C:\Users\adity\Downloads\Historical data\BharatMarket_AI\data\forecasts\statistical_forecasts.csv
+Metrics File,C:\Users\adity\Downloads\Historical data\BharatMarket_AI\outputs\reports\statistical_forecasting_metrics.csv

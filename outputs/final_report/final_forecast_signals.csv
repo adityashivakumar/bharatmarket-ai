@@ -1,0 +1,11 @@
+Instrument,Signal,RSI_14,MACD,MACD_Signal,Signal_Reason
+NIFTY50,HOLD,66.98605904132967,649.3037661912203,565.9256594073704,Forecast movement is below the signal threshold. MACD bearish confirmation is absent.
+BANKNIFTY,HOLD,67.70839628689713,2063.962791812395,1561.5375676990002,Forecast movement is below the signal threshold. MACD bearish confirmation is absent.
+RELIANCE,HOLD,64.88882913743433,39.36580410163174,34.04512578624398,Forecast movement is below the signal threshold. MACD bearish confirmation is absent.
+TCS,HOLD,57.15014244842279,15.539041031541274,32.225376971302744,Forecast movement is below the signal threshold. MACD bullish confirmation is absent.
+HDFCBANK,HOLD,65.1909520090116,30.638457010843695,24.81153054203184,MACD bearish confirmation is absent.
+INFY,HOLD,45.38617627936824,0.6682824789245387,10.773014087072028,Forecast movement is below the signal threshold. MACD bullish confirmation is absent.
+ICICIBANK,HOLD,65.34278305831553,60.90288348136346,54.62616693805898,Forecast movement is below the signal threshold. MACD bearish confirmation is absent.
+SBIN,HOLD,70.27952884542266,45.29240994454062,31.980583220051045,Forecast movement is below the signal threshold. RSI is at or above 70. MACD bearish confirmation is absent.
+ITC,HOLD,73.01519087375905,9.189863644990226,7.005816439636023,Forecast movement is below the signal threshold. RSI is at or above 70. MACD bearish confirmation is absent.
+LT,HOLD,59.08111400520008,102.22478750896289,96.34029893158592,Forecast movement is below the signal threshold. MACD bearish confirmation is absent.
