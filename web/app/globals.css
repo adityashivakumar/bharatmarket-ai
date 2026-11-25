@@ -230,3 +230,80 @@ body{background:radial-gradient(ellipse at 68% -25%,rgba(34,211,238,.055),transp
 @media(prefers-reduced-motion:reduce){*,*:before,*:after{animation-duration:.01ms!important;animation-iteration-count:1!important;transition-duration:.01ms!important}}
 
 @media(min-width:761px){.sidebar.collapsed .brand{gap:2px;flex-direction:column;padding-bottom:16px}.sidebar.collapsed .brand-mark{font-size:25px}.sidebar.collapsed .collapse-btn{display:grid;width:28px;height:24px}.sidebar.collapsed .nav-item{height:38px}}
+
+/* Markets terminal: three-pane workstation */
+.markets-terminal{display:grid;grid-template-columns:238px minmax(420px,1fr) 258px;gap:10px;align-items:stretch;min-height:680px}
+.market-watch,.market-order-panel{min-width:0;padding:12px;background:#111622}
+.market-pane-head{display:flex;align-items:center;justify-content:space-between;gap:8px;margin-bottom:13px}
+.market-pane-head h2{font-size:14px;margin:5px 0 0;font-weight:650}
+.market-pane-head h2 span{font:10px 'JetBrains Mono',monospace;color:#64748B;margin-left:4px}
+.market-icon-btn{width:28px;height:28px;display:grid;place-items:center;border:1px solid var(--bm-border);background:#151c2c;color:#94a3b8;border-radius:5px;cursor:pointer}
+.market-watch-search{height:31px;display:flex;align-items:center;gap:7px;padding:0 8px;background:#0B0F17;border:1px solid var(--bm-border);border-radius:5px;color:#64748B}
+.market-watch-search input{width:100%;background:transparent;border:0;outline:0;color:#e2e8f0;font:10px 'JetBrains Mono',monospace}
+.market-watch-tabs{display:flex;gap:3px;margin:11px 0;border-bottom:1px solid var(--bm-border)}
+.market-watch-tabs button,.market-timeframes button,.market-chart-tools button{border:0;background:transparent;color:#8291a5;padding:7px 6px;font:600 8px 'JetBrains Mono',monospace;cursor:pointer}
+.market-watch-tabs button.active{color:var(--bm-cyan);border-bottom:2px solid var(--bm-cyan)}
+.market-watch-label{display:flex;justify-content:space-between;padding:7px 4px;color:#64748B;font:600 8px 'JetBrains Mono',monospace;letter-spacing:.05em}
+.market-watch-list{max-height:535px;overflow:auto}
+.market-watch-row{width:100%;display:flex;align-items:center;justify-content:space-between;gap:5px;padding:10px 5px;border:0;border-top:1px solid var(--bm-border);background:transparent;color:#e2e8f0;text-align:left;cursor:pointer}
+.market-watch-row:hover,.market-watch-row.selected{background:rgba(34,211,238,.07)}
+.market-watch-name b,.market-watch-value b{display:block;font:600 10px 'JetBrains Mono',monospace}
+.market-watch-name small,.market-watch-value small{display:block;margin-top:4px;font:9px 'JetBrains Mono',monospace;color:#748399}
+.market-watch-name small{font-family:Inter,sans-serif;max-width:125px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.market-watch-value{text-align:right;white-space:nowrap}
+.watch-foot{padding:10px 3px 0;border-top:1px solid var(--bm-border);font:8px 'JetBrains Mono',monospace;color:#64748B}
+.market-chart-column{min-width:0;display:flex;flex-direction:column;gap:10px}
+.market-instrument-head{padding:13px 15px;display:flex;align-items:center;justify-content:space-between;gap:10px}
+.market-instrument-head h2{margin:5px 0 4px;font:650 17px 'JetBrains Mono',monospace}
+.market-instrument-head h2 small{font:11px Inter,sans-serif;color:#94a3b8;margin-left:6px}
+.market-historical-tag{margin-left:8px;color:var(--bm-amber);font:600 8px 'JetBrains Mono',monospace}
+.market-last-price{font:600 18px 'JetBrains Mono',monospace;color:#f1f5f9}
+.market-last-price span{font-size:10px;margin-left:8px}
+.market-ohlc-line{font:9px 'JetBrains Mono',monospace;color:#7d8da1;margin-top:7px}
+.market-chain-trigger{white-space:nowrap;font:600 9px 'JetBrains Mono',monospace}
+.market-chart-panel{padding:10px 12px 8px;min-width:0;flex:1}
+.market-chart-toolbar{display:flex;align-items:center;justify-content:space-between;gap:8px;border-bottom:1px solid var(--bm-border);padding-bottom:6px}
+.market-timeframes{display:flex;gap:3px}
+.market-timeframes button{padding:6px 9px;border-radius:4px}
+.market-timeframes button.active,.market-chart-tools button.tool-on{background:rgba(34,211,238,.1);color:var(--bm-cyan)}
+.market-chart-tools{display:flex;align-items:center;gap:4px}
+.market-chart-tools span{font:8px 'JetBrains Mono',monospace;color:#64748B;margin-left:5px}
+.candlestick-wrap{height:430px;width:100%;min-width:0;padding-top:10px}
+.candlestick-wrap svg{width:100%;height:100%;overflow:visible}
+.market-empty{height:100%;display:grid;place-items:center;color:#7c8da2;font:10px 'JetBrains Mono',monospace;text-align:center;padding:20px}
+.market-chart-footer{display:flex;justify-content:space-between;gap:8px;padding:8px 2px 1px;border-top:1px solid var(--bm-border);font:8px 'JetBrains Mono',monospace;color:#718096}
+.market-chart-footer i{display:inline-block;width:7px;height:7px;border-radius:2px;margin:0 4px 0 8px}
+.candle-green{background:#10B981}.candle-red{background:#EF4444}.ma-key{background:#F59E0B}
+.market-bottom-strip{display:grid;grid-template-columns:repeat(4,1fr);padding:10px 12px;gap:6px}
+.market-bottom-strip div{display:flex;flex-direction:column;gap:5px}
+.market-bottom-strip span{font:8px 'JetBrains Mono',monospace;color:#64748B}
+.market-bottom-strip b{font:600 9px 'JetBrains Mono',monospace;color:#cbd5e1}
+.warn-text{color:var(--bm-amber)!important}
+.market-order-panel{height:max-content;position:sticky;top:60px}
+.paper-badge{padding:4px 6px;border:1px solid rgba(245,158,11,.25);background:rgba(245,158,11,.08);border-radius:4px;color:var(--bm-amber);font:600 8px 'JetBrains Mono',monospace}
+.order-symbol{display:flex;justify-content:space-between;padding:10px 0;border-top:1px solid var(--bm-border);border-bottom:1px solid var(--bm-border);font:600 11px 'JetBrains Mono',monospace}
+.order-symbol span{color:#cbd5e1}
+.order-side-toggle{display:grid;grid-template-columns:1fr 1fr;gap:5px;margin:12px 0}
+.order-side-toggle button{height:31px;border:1px solid var(--bm-border);background:#0B0F17;color:#94a3b8;border-radius:5px;font:700 10px 'JetBrains Mono',monospace;cursor:pointer}
+.order-side-toggle button.buy-active{background:rgba(16,185,129,.12);border-color:#10B981;color:#10B981}
+.order-side-toggle button.sell-active{background:rgba(239,68,68,.12);border-color:#EF4444;color:#EF4444}
+.order-field{display:flex;flex-direction:column;gap:6px;margin:11px 0;color:#8291a5;font:600 8px 'JetBrains Mono',monospace;letter-spacing:.06em}
+.order-field input,.order-field select{height:32px;width:100%;padding:0 8px;border:1px solid var(--bm-border);border-radius:5px;background:#0B0F17;color:#dbe5ef;font:10px 'JetBrains Mono',monospace;outline:none}
+.order-field input:focus,.order-field select:focus{border-color:var(--bm-cyan)}
+.order-estimate{display:flex;flex-direction:column;gap:5px;margin:14px 0;padding:10px;background:#0B0F17;border:1px solid var(--bm-border);border-radius:5px}
+.order-estimate span,.order-estimate small{font:8px 'JetBrains Mono',monospace;color:#718096}
+.order-estimate b{font:600 15px 'JetBrains Mono',monospace;color:#e2e8f0}
+.paper-submit{height:34px;width:100%;border:1px solid #334155;border-radius:5px;background:#202938;color:#718096;font:700 9px 'JetBrains Mono',monospace;cursor:not-allowed}
+.order-disclaimer{font-size:9px;line-height:1.55;color:#7b899b;margin:9px 0 13px}
+.full-width{width:100%;justify-content:center}
+.chain-overlay{position:fixed;inset:48px 0 0;z-index:20;background:rgba(2,6,12,.62);display:flex;justify-content:flex-end}
+.chain-drawer{width:min(440px,95vw);height:100%;padding:18px;background:#111622;border-left:1px solid var(--bm-border);box-shadow:-20px 0 60px rgba(0,0,0,.35)}
+.chain-unavailable{margin-top:38px;padding:24px 16px;text-align:center;border:1px dashed rgba(245,158,11,.3);border-radius:8px;background:rgba(245,158,11,.035)}
+.chain-unavailable>svg{color:var(--bm-amber)}
+.chain-unavailable h3{font-size:14px;color:#e2e8f0;margin:14px 0 8px}
+.chain-unavailable p,.chain-next-step p{font-size:10px;line-height:1.65;color:#94a3b8}
+.chain-unavailable span{display:inline-block;margin-top:10px;color:var(--bm-amber);font:600 8px 'JetBrains Mono',monospace}
+.chain-next-step{margin-top:14px;padding:13px;border:1px solid var(--bm-border);border-radius:6px}
+.chain-next-step b{font-size:10px;color:#cbd5e1}
+@media(max-width:1250px){.markets-terminal{grid-template-columns:210px minmax(360px,1fr)}.market-order-panel{grid-column:1/-1;position:static;display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:8px;align-items:center}.market-order-panel .market-pane-head,.market-order-panel .order-symbol,.market-order-panel .order-side-toggle{grid-column:span 1}.market-order-panel .order-field{margin:4px 0}.market-order-panel .order-estimate,.market-order-panel .order-disclaimer{margin:4px 0}.market-order-panel .paper-submit,.market-order-panel .full-width{height:32px}}
+@media(max-width:850px){.markets-terminal{grid-template-columns:1fr}.market-watch-list{max-height:250px}.market-order-panel{display:block}.market-order-panel .order-field{margin:11px 0}.candlestick-wrap{height:300px}.market-bottom-strip{grid-template-columns:repeat(2,1fr)}.market-instrument-head{align-items:flex-start}.market-chart-footer{flex-wrap:wrap}}
