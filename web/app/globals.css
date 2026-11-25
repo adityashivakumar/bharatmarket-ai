@@ -228,3 +228,5 @@ body{background:radial-gradient(ellipse at 68% -25%,rgba(34,211,238,.055),transp
 @media(max-width:1050px){.sidebar{width:220px}.sidebar.collapsed{width:64px}}
 @media(max-width:760px){.sidebar{width:240px}.sidebar.collapsed{width:240px}.sidebar.collapsed .brand-copy,.sidebar.collapsed .workspace-switch>div:nth-child(2),.sidebar.collapsed .workspace-switch>svg,.sidebar.collapsed .nav-label,.sidebar.collapsed .nav-item span,.sidebar.collapsed .connection-card,.sidebar.collapsed .user-row>div:nth-child(2),.sidebar.collapsed .user-row>svg{display:initial}.sidebar.collapsed .nav-item{justify-content:flex-start}.collapse-btn{display:none}.topbar{height:48px}.content{padding:14px 12px 0}.chart-wrap{height:240px}}
 @media(prefers-reduced-motion:reduce){*,*:before,*:after{animation-duration:.01ms!important;animation-iteration-count:1!important;transition-duration:.01ms!important}}
+
+@media(min-width:761px){.sidebar.collapsed .brand{gap:2px;flex-direction:column;padding-bottom:16px}.sidebar.collapsed .brand-mark{font-size:25px}.sidebar.collapsed .collapse-btn{display:grid;width:28px;height:24px}.sidebar.collapsed .nav-item{height:38px}}
