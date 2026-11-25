@@ -24,6 +24,65 @@ def read_symbol(symbol):
  return df.dropna(subset=['date','close']).sort_values('date').drop_duplicates('date',keep='last')
 @app.get('/health')
 def health(): return {'ok':True,'service':'bharatmarket-api','timestamp':datetime.now().astimezone().isoformat()}
+
+@app.get('/data/health')
+def data_health():
+ results=[]
+ for symbol in SYMBOLS:
+  path=RAW/f'{symbol}.csv'
+  item={'symbol':symbol,'file':path.name,'exists':path.exists(),'status':'MISSING','rows':0,'first_date':None,'last_date':None,'missing_volume':False,'issues':[]}
+  if not path.exists():
+   item['issues'].append('CSV file not found')
+   results.append(item)
+   continue
+  try:
+   df=pd.read_csv(path)
+   df.columns=[str(col).strip().lower() for col in df.columns]
+   required={'date','open','high','low','close'}
+   missing=sorted(required-set(df.columns))
+   if missing:
+    item['issues'].append('Missing columns: '+', '.join(missing))
+    item['status']='INVALID'
+    results.append(item)
+    continue
+   item['missing_volume']='volume' not in df.columns
+   if item['missing_volume']:
+    item['issues'].append('Volume column missing; Streamlit analytics expects volume')
+   df['date']=pd.to_datetime(df['date'],errors='coerce')
+   for col in ['open','high','low','close','volume']:
+    if col in df: df[col]=pd.to_numeric(df[col],errors='coerce')
+   item['rows']=int(len(df))
+   valid=df.dropna(subset=['date','open','high','low','close']).copy()
+   item['first_date']=valid['date'].min().strftime('%Y-%m-%d') if not valid.empty else None
+   item['last_date']=valid['date'].max().strftime('%Y-%m-%d') if not valid.empty else None
+   invalid_dates=int(df['date'].isna().sum())
+   if invalid_dates: item['issues'].append(f'{invalid_dates} invalid date rows')
+   invalid_prices=int(df[['open','high','low','close']].isna().any(axis=1).sum())
+   if invalid_prices: item['issues'].append(f'{invalid_prices} rows with missing/non-numeric OHLC')
+   bad_ohlc=int(((valid['high'] < valid[['open','close','low']].max(axis=1)) | (valid['low'] > valid[['open','close','high']].min(axis=1))).sum())
+   if bad_ohlc: item['issues'].append(f'{bad_ohlc} inconsistent OHLC rows')
+   duplicates=int(valid['date'].duplicated().sum())
+   if duplicates: item['issues'].append(f'{duplicates} duplicate dates (loader keeps last)')
+   if item['rows']==0 or valid.empty: item['status']='INVALID'
+   elif item['issues']: item['status']='WARNING'
+   else: item['status']='OK'
+  except Exception as exc:
+   item['status']='ERROR'
+   item['issues'].append(str(exc))
+  results.append(item)
+ ok=sum(1 for item in results if item['status']=='OK')
+ return {'source':'local_csv','checked':len(results),'ok':ok,'warnings':sum(1 for item in results if item['status']=='WARNING'),'invalid':sum(1 for item in results if item['status'] in ('INVALID','ERROR','MISSING')),'instruments':results,'timestamp':datetime.now().astimezone().isoformat()}
+
+@app.get('/ml/status')
+def ml_status():
+ candidates=[ROOT/'models',ROOT/'outputs'/'models',ROOT/'artifacts'/'models',ROOT/'outputs'/'forecasts']
+ found=[]
+ for folder in candidates:
+  if folder.exists():
+   for path in sorted(folder.rglob('*')):
+    if path.is_file():
+     found.append({'name':path.name,'path':str(path.relative_to(ROOT)),'bytes':path.stat().st_size})
+ return {'integration':'not_verified','model_artifacts_found':len(found),'artifacts':found[:100],'message':'Artifact discovery only. Model loading, feature compatibility and inference have not been tested by this API.'}
 @app.get('/market/universe')
 def universe():
  instruments=[]
