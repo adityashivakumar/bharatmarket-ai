@@ -274,7 +274,7 @@ body{background:radial-gradient(ellipse at 68% -25%,rgba(34,211,238,.055),transp
 .market-chart-footer{display:flex;justify-content:space-between;gap:8px;padding:8px 2px 1px;border-top:1px solid var(--bm-border);font:8px 'JetBrains Mono',monospace;color:#718096}
 .market-chart-footer i{display:inline-block;width:7px;height:7px;border-radius:2px;margin:0 4px 0 8px}
 .candle-green{background:#10B981}.candle-red{background:#EF4444}.ma-key{background:#F59E0B}
-.market-bottom-strip{display:grid;grid-template-columns:repeat(4,1fr);padding:10px 12px;gap:6px}
+.market-bottom-strip{display:grid;grid-template-columns:repeat(5,1fr);padding:10px 12px;gap:6px}
 .market-bottom-strip div{display:flex;flex-direction:column;gap:5px}
 .market-bottom-strip span{font:8px 'JetBrains Mono',monospace;color:#64748B}
 .market-bottom-strip b{font:600 9px 'JetBrains Mono',monospace;color:#cbd5e1}
