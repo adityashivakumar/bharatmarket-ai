@@ -25,3 +25,6 @@ out/
 
 # Generated live market tick data
 upstox_integration/live/ticks/
+
+# TypeScript build cache
+*.tsbuildinfo
