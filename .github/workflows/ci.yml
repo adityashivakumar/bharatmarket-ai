@@ -2,7 +2,7 @@ name: BharatMarket CI
 
 on:
   push:
-    branches: [main, redesign/web-terminal, feature/live-terminal-integration]
+    branches: ['**']
   pull_request:
     branches: [main, redesign/web-terminal]
 
