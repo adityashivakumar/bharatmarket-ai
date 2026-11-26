@@ -168,7 +168,7 @@ def backtest(symbol: str, fast: int = 20, slow: int = 50, cost_bps: float = 10.0
     if x.empty:
         raise ValueError("Not enough observations after indicator warm-up")
     equity = (1+x.strategy_return).cumprod()
-    peak = equity.cummax()
+    peak = equity.cummax().clip(lower=1.0)
     drawdown = equity/peak-1
     trades = int((x.turnover > 0).sum())
     wins = int((x.loc[x.turnover > 0, "strategy_return"] > 0).sum())
