@@ -307,3 +307,18 @@ body{background:radial-gradient(ellipse at 68% -25%,rgba(34,211,238,.055),transp
 .chain-next-step b{font-size:10px;color:#cbd5e1}
 @media(max-width:1250px){.markets-terminal{grid-template-columns:210px minmax(360px,1fr)}.market-order-panel{grid-column:1/-1;position:static;display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:8px;align-items:center}.market-order-panel .market-pane-head,.market-order-panel .order-symbol,.market-order-panel .order-side-toggle{grid-column:span 1}.market-order-panel .order-field{margin:4px 0}.market-order-panel .order-estimate,.market-order-panel .order-disclaimer{margin:4px 0}.market-order-panel .paper-submit,.market-order-panel .full-width{height:32px}}
 @media(max-width:850px){.markets-terminal{grid-template-columns:1fr}.market-watch-list{max-height:250px}.market-order-panel{display:block}.market-order-panel .order-field{margin:11px 0}.candlestick-wrap{height:300px}.market-bottom-strip{grid-template-columns:repeat(2,1fr)}.market-instrument-head{align-items:flex-start}.market-chart-footer{flex-wrap:wrap}}
+
+
+/* Live / historical data mode and intraday terminal */
+.mode-switch{display:inline-flex;align-items:center;gap:3px;padding:3px;border:1px solid var(--bm-border);border-radius:6px;background:#0B0F17}
+.mode-switch button{border:0;border-radius:4px;padding:7px 10px;background:transparent;color:#8392a6;font:600 9px 'JetBrains Mono',monospace;cursor:pointer}
+.mode-switch button.active{background:rgba(34,211,238,.12);color:var(--bm-cyan)}
+.market-state.live-state{color:#34d399}
+.market-state.live-state i{background:#10b981;box-shadow:0 0 10px rgba(16,185,129,.65)}
+.market-live-tag{margin-left:8px;color:#34d399;font:600 8px 'JetBrains Mono',monospace}
+.market-indicator-strip{display:grid;grid-template-columns:repeat(6,minmax(0,1fr));gap:8px;padding:10px 12px}
+.market-indicator-strip div{display:flex;min-width:0;flex-direction:column;gap:5px}
+.market-indicator-strip span{font:8px 'JetBrains Mono',monospace;color:#64748B}
+.market-indicator-strip b{font:600 10px 'JetBrains Mono',monospace;color:#dbe5ef;overflow-wrap:anywhere}
+@media(max-width:900px){.market-indicator-strip{grid-template-columns:repeat(3,minmax(0,1fr))}.heading-actions{flex-wrap:wrap}}
+@media(max-width:520px){.market-indicator-strip{grid-template-columns:repeat(2,minmax(0,1fr))}.mode-switch button{padding:7px 6px}}
