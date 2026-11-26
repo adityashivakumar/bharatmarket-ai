@@ -1,5 +1,8 @@
 name: BharatMarket CI
 
+permissions:
+  contents: read
+
 on:
   push:
     branches: ['**']
