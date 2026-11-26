@@ -322,3 +322,12 @@ body{background:radial-gradient(ellipse at 68% -25%,rgba(34,211,238,.055),transp
 .market-indicator-strip b{font:600 10px 'JetBrains Mono',monospace;color:#dbe5ef;overflow-wrap:anywhere}
 @media(max-width:900px){.market-indicator-strip{grid-template-columns:repeat(3,minmax(0,1fr))}.heading-actions{flex-wrap:wrap}}
 @media(max-width:520px){.market-indicator-strip{grid-template-columns:repeat(2,minmax(0,1fr))}.mode-switch button{padding:7px 6px}}
+
+.live-terminal-banner{grid-column:1/-1;display:flex;align-items:center;flex-wrap:wrap;gap:10px;padding:9px 12px;border:1px solid var(--bm-border);border-radius:6px;background:#111622;color:#94a3b8;font:9px 'JetBrains Mono',monospace}
+.live-terminal-banner b{color:#dbe5ef;font-size:9px}
+.live-terminal-banner button{border:1px solid var(--bm-border);border-radius:4px;background:#0B0F17;color:#cbd5e1;padding:6px 9px;font:600 8px 'JetBrains Mono',monospace;cursor:pointer}
+.live-terminal-banner button:disabled{opacity:.4;cursor:not-allowed}
+.live-terminal-banner button:first-of-type{margin-left:auto}
+.live-terminal-banner .pulse{width:7px;height:7px;border-radius:100%;background:#f59e0b}
+.live-terminal-banner .pulse.green{background:#10b981;box-shadow:0 0 9px rgba(16,185,129,.65)}
+@media(max-width:700px){.live-terminal-banner{align-items:flex-start}.live-terminal-banner button:first-of-type{margin-left:0}}
