@@ -35,5 +35,6 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: '3.11'
-      - run: python -m py_compile api_server.py upstox_integration/live/live_feed_service.py upstox_integration/live/streaming_candle_engine.py upstox_integration/live/indicator_engine.py tests/test_streaming_candle_engine.py
-      - run: python -m unittest tests.test_streaming_candle_engine -v
+      - run: python -m pip install -r requirements-web.txt
+      - run: python -m py_compile api_server.py research_api.py research_service.py upstox_integration/live/live_feed_service.py upstox_integration/live/streaming_candle_engine.py upstox_integration/live/indicator_engine.py tests/test_streaming_candle_engine.py tests/test_research_service.py
+      - run: python -m unittest tests.test_streaming_candle_engine tests.test_research_service -v
