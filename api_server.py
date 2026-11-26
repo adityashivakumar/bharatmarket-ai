@@ -107,10 +107,67 @@ def history(symbol:str,period:str=Query('1Y',pattern='^(1M|3M|6M|1Y|5Y)$')):
 def live_status():
  try:
   from upstox_integration.live.live_feed_service import get_service
-  s=get_service().get_snapshot().get('status',{})
-  return {'connected':bool(s.get('connected')),'started':bool(s.get('started')),'last_message_time':s.get('last_message_time'),'message_count':int(s.get('message_count',0)),'update_count':int(s.get('update_count',0)),'last_error':s.get('last_error'),'tick_file':s.get('tick_file')}
+  from upstox_integration.live.streaming_candle_engine import candle_engine
+
+  s = get_service().get_snapshot().get('status', {})
+  engine = candle_engine.get_snapshot()
+
+  last_message = s.get('last_message_time')
+  age_seconds = None
+
+  if last_message:
+   try:
+    age_seconds = max(
+     0.0,
+     (datetime.now().astimezone() - datetime.fromisoformat(last_message)).total_seconds()
+    )
+   except (TypeError, ValueError):
+    age_seconds = None
+
+  connected = bool(s.get('connected'))
+  started = bool(s.get('started'))
+
+  if not started:
+   feed_state = 'stopped'
+  elif not connected:
+   feed_state = 'disconnected'
+  elif not s.get('message_count'):
+   feed_state = 'connected_awaiting_data'
+  elif age_seconds is not None and age_seconds > 30:
+   feed_state = 'stale'
+  else:
+   feed_state = 'receiving_data'
+
+  return {
+   'connected': connected,
+   'started': started,
+   'feed_state': feed_state,
+   'last_message_time': last_message,
+   'last_update_time': s.get('last_update_time'),
+   'last_update_exchange_time': s.get('last_update_exchange_time'),
+   'message_age_seconds': age_seconds,
+   'message_count': int(s.get('message_count', 0)),
+   'update_count': int(s.get('update_count', 0)),
+   'valid_observation_count': int(s.get('valid_observation_count', 0)),
+   'duplicate_observation_count': int(s.get('duplicate_observation_count', 0)),
+   'invalid_observation_count': int(s.get('invalid_observation_count', 0)),
+   'candle_engine': engine,
+   'last_error': s.get('last_error'),
+   'tick_file': s.get('tick_file')
+  }
  except Exception as exc:
-  return {'connected':False,'started':False,'last_message_time':None,'message_count':0,'update_count':0,'last_error':f'Live service unavailable: {exc}','tick_file':None}
+  return {
+   'connected': False,
+   'started': False,
+   'feed_state': 'unavailable',
+   'last_message_time': None,
+   'message_age_seconds': None,
+   'message_count': 0,
+   'update_count': 0,
+   'candle_engine': None,
+   'last_error': f'Live service unavailable: {exc}',
+   'tick_file': None
+  }
 @app.post('/live/start')
 def start_live():
  try:
@@ -136,3 +193,146 @@ def report_preview(filename:str):
  if not path.exists(): raise HTTPException(404,'Report not found')
  df=pd.read_csv(path).replace({float('inf'):None,float('-inf'):None}).fillna('')
  return {'name':filename,'columns':list(df.columns),'rows':df.head(500).to_dict(orient='records'),'total_rows':len(df)}
+
+
+# ----------------------------------------------------------
+# LIVE MARKET DATA ENDPOINTS
+# ----------------------------------------------------------
+
+def _live_clean_value(value):
+ try:
+  if pd.isna(value):
+   return None
+ except (TypeError, ValueError):
+  pass
+
+ if hasattr(value, 'isoformat'):
+  return value.isoformat()
+
+ if hasattr(value, 'item'):
+  return value.item()
+
+ return value
+
+
+def _live_clean_records(records):
+ return [
+  {key: _live_clean_value(value) for key, value in row.items()}
+  for row in records
+ ]
+
+
+@app.get('/live/market')
+def live_market():
+ try:
+  from upstox_integration.live.live_feed_service import get_service
+
+  snapshot = get_service().get_snapshot()
+  df = snapshot.get('data')
+
+  rows = []
+  if df is not None and not df.empty:
+   rows = _live_clean_records(df.to_dict(orient='records'))
+
+  return {
+   'source': 'upstox_live_feed',
+   'count': len(rows),
+   'instruments': rows,
+   'status': snapshot.get('status', {})
+  }
+ except Exception as exc:
+  raise HTTPException(503, f'Live market data unavailable: {exc}')
+
+
+@app.get('/live/candles')
+def live_candles(
+ symbol: str = Query(..., min_length=1),
+ timeframe: str = Query('1m', pattern='^(1m|5m|15m)$'),
+ limit: int = Query(200, ge=1, le=500)
+):
+ try:
+  from upstox_integration.live.streaming_candle_engine import candle_engine
+
+  symbol = symbol.strip().upper()
+
+  if symbol not in SYMBOLS:
+   raise HTTPException(404, 'Unknown instrument')
+
+  rows = candle_engine.get_candles(
+   symbol=symbol,
+   timeframe=timeframe,
+   limit=limit
+  )
+
+  return {
+   'symbol': symbol,
+   'timeframe': timeframe,
+   'source': 'upstox_streaming_candles',
+   'count': len(rows),
+   'candles': rows
+  }
+ except HTTPException:
+  raise
+ except Exception as exc:
+  raise HTTPException(503, f'Live candles unavailable: {exc}')
+
+
+@app.get('/live/indicators')
+def live_indicators(
+ symbol: str = Query(..., min_length=1),
+ timeframe: str = Query('1m', pattern='^(1m|5m|15m)$'),
+ limit: int = Query(200, ge=1, le=500)
+):
+ try:
+  from upstox_integration.live.streaming_candle_engine import candle_engine
+  from upstox_integration.live.indicator_engine import calculate_indicators
+
+  symbol = symbol.strip().upper()
+
+  if symbol not in SYMBOLS:
+   raise HTTPException(404, 'Unknown instrument')
+
+  candles = candle_engine.get_candles(
+   symbol=symbol,
+   timeframe=timeframe,
+   limit=limit
+  )
+
+  if not candles:
+   return {
+    'symbol': symbol,
+    'timeframe': timeframe,
+    'source': 'upstox_streaming_candles',
+    'count': 0,
+    'indicators': [],
+    'message': 'No live candles received yet.'
+   }
+
+  df = pd.DataFrame(candles)
+
+  # The indicator engine expects a volume column.
+  # Keep unavailable volume as NaN; do not invent index volume.
+  df['volume'] = pd.to_numeric(
+   df['volume'],
+   errors='coerce'
+  )
+
+  calculated = calculate_indicators(df)
+
+  records = _live_clean_records(
+   calculated.to_dict(orient='records')
+  )
+
+  return {
+   'symbol': symbol,
+   'timeframe': timeframe,
+   'source': 'upstox_streaming_candles',
+   'count': len(records),
+   'indicators': records
+  }
+
+ except HTTPException:
+  raise
+ except Exception as exc:
+  raise HTTPException(503, f'Live indicators unavailable: {exc}')
+

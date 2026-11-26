@@ -18,6 +18,7 @@ from zoneinfo import ZoneInfo
 import pandas as pd
 import upstox_client
 from dotenv import load_dotenv
+from upstox_integration.live.streaming_candle_engine import candle_engine
 
 
 IST = ZoneInfo("Asia/Kolkata")
@@ -535,6 +536,14 @@ class UpstoxLiveFeedService:
 
                 self.latest[row["symbol"]] = row.copy()
                 self._append_tick(row)
+
+                # Update the in-memory candle engine without allowing
+                # candle errors to interrupt the live market feed.
+                try:
+                    candle_engine.update(row)
+                except Exception as error:
+                    self.last_error = f"Candle engine error: {error}"
+                    print(f"[CANDLE ENGINE] {error}")
 
     # ------------------------------------------------------
     # GET LATEST MARKET DATA
