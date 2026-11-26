@@ -26,7 +26,7 @@ class ResearchServiceTests(unittest.TestCase):
             result = research.forecast("RELIANCE")
         self.assertEqual(result["method"], "60-session historical mean-return drift baseline")
         self.assertEqual([x["horizon_trading_days"] for x in result["forecasts"]], [1, 5, 10])
-        self.assertIn("not an ML model", result["limitations"])
+        self.assertIn("not an ml model", result["limitations"].lower())
 
     def test_backtest_shifts_signal_and_reports_costs(self):
         with patch.object(research, "load_daily", return_value=sample_frame()):
