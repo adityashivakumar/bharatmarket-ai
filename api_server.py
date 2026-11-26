@@ -8,6 +8,8 @@ ROOT=Path(__file__).resolve().parent
 RAW=ROOT/'data'/'raw'
 REPORTS=ROOT/'outputs'/'reports'
 app=FastAPI(title='BharatMarket AI API',version='1.0.0')
+from research_api import router as research_router
+app.include_router(research_router)
 app.add_middleware(CORSMiddleware,allow_origins=['http://localhost:3000','http://127.0.0.1:3000'],allow_credentials=True,allow_methods=['GET','POST'],allow_headers=['*'])
 SYMBOLS=['NIFTY50','BANKNIFTY','RELIANCE','TCS','HDFCBANK','INFY','ICICIBANK','SBIN','ITC','LT']
 NAMES={'NIFTY50':'NIFTY 50','BANKNIFTY':'NIFTY BANK','RELIANCE':'Reliance Industries','TCS':'Tata Consultancy Services','HDFCBANK':'HDFC Bank','INFY':'Infosys','ICICIBANK':'ICICI Bank','SBIN':'State Bank of India','ITC':'ITC Limited','LT':'Larsen & Toubro'}
