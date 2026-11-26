@@ -112,28 +112,36 @@ def live_status():
   s = get_service().get_snapshot().get('status', {})
   engine = candle_engine.get_snapshot()
 
+  now = datetime.now().astimezone()
   last_message = s.get('last_message_time')
-  age_seconds = None
+  last_update = s.get('last_update_time')
 
-  if last_message:
+  def _age_seconds(value):
+   if not value:
+    return None
    try:
-    age_seconds = max(
-     0.0,
-     (datetime.now().astimezone() - datetime.fromisoformat(last_message)).total_seconds()
-    )
+    timestamp = datetime.fromisoformat(value)
+    if timestamp.tzinfo is None:
+     timestamp = timestamp.astimezone()
+    return max(0.0, (now - timestamp).total_seconds())
    except (TypeError, ValueError):
-    age_seconds = None
+    return None
+
+  message_age_seconds = _age_seconds(last_message)
+  update_age_seconds = _age_seconds(last_update)
 
   connected = bool(s.get('connected'))
   started = bool(s.get('started'))
+  expected_instruments = len(SYMBOLS)
+  received_instruments = len((snapshot := get_service().get_snapshot().get('data'))['symbol'].unique()) if snapshot is not None and not snapshot.empty else 0
 
   if not started:
    feed_state = 'stopped'
   elif not connected:
    feed_state = 'disconnected'
-  elif not s.get('message_count'):
+  elif not s.get('valid_observation_count'):
    feed_state = 'connected_awaiting_data'
-  elif age_seconds is not None and age_seconds > 30:
+  elif update_age_seconds is None or update_age_seconds > 30:
    feed_state = 'stale'
   else:
    feed_state = 'receiving_data'
@@ -143,9 +151,12 @@ def live_status():
    'started': started,
    'feed_state': feed_state,
    'last_message_time': last_message,
-   'last_update_time': s.get('last_update_time'),
+   'last_update_time': last_update,
    'last_update_exchange_time': s.get('last_update_exchange_time'),
-   'message_age_seconds': age_seconds,
+   'message_age_seconds': message_age_seconds,
+   'update_age_seconds': update_age_seconds,
+   'expected_instruments': expected_instruments,
+   'received_instruments': received_instruments,
    'message_count': int(s.get('message_count', 0)),
    'update_count': int(s.get('update_count', 0)),
    'valid_observation_count': int(s.get('valid_observation_count', 0)),
