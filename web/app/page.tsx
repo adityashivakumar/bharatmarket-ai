@@ -66,7 +66,7 @@ function MarketsTerminal({symbol,rows,quotes,loading,range,setRange,onSelect,mod
 
  const displayedQuotes=mode==='live'?liveQuotes.map(q=>({symbol:q.symbol,name:names[q.symbol]||q.symbol,price:Number(q.ltp),change:Number(q.change??(q.ltp-(q.previous_close??q.ltp))),changePct:Number(q.change_pct??(q.previous_close?((q.ltp-q.previous_close)/q.previous_close*100):0)),date:q.exchange_time||''})):quotes;
  const filtered=displayedQuotes.filter((q:any)=>(group!=='F&O MOVERS'||q.symbol!=='NIFTY50')&&(!search||q.symbol.toLowerCase().includes(search.toLowerCase())||q.name.toLowerCase().includes(search.toLowerCase())));
- const activeRows:Row[]=mode==='live'?candles.map(c=>({date:c.candle_start,open:c.open,high:c.high,low:c.low,close:c.close,volume:c.volume})):rows;
+const activeRows:Row[]=mode==='live'?candles.map(c=>({date:c.candle_start,open:c.open,high:c.high,low:c.low,close:c.close,volume:c.volume})):rows;
  const last=activeRows.at(-1),prev=activeRows.at(-2),pct=prev?(last.close-prev.close)/prev.close*100:0;
  const min=activeRows.length?Math.min(...activeRows.map((r:any)=>r.low)):0,max=activeRows.length?Math.max(...activeRows.map((r:any)=>r.high)):1,span=max-min||1;
  const points=activeRows.map((r:any,i:number)=>({x:30+i*940/Math.max(activeRows.length-1,1),o:382-(r.open-min)/span*330,h:382-(r.high-min)/span*330,l:382-(r.low-min)/span*330,c:382-(r.close-min)/span*330,up:r.close>=r.open,v:r.volume||0,date:r.date}));
