@@ -133,7 +133,8 @@ def live_status():
   connected = bool(s.get('connected'))
   started = bool(s.get('started'))
   expected_instruments = len(SYMBOLS)
-  received_instruments = len((snapshot := get_service().get_snapshot().get('data'))['symbol'].unique()) if snapshot is not None and not snapshot.empty else 0
+  live_data = get_service().get_snapshot().get('data')
+  received_instruments = int(live_data['symbol'].nunique()) if live_data is not None and not live_data.empty else 0
 
   if not started:
    feed_state = 'stopped'
